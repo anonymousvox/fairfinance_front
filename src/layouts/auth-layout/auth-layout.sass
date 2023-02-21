@@ -1,0 +1,125 @@
+.auth-layout
+    min-height: calc(100% - 70px)
+    background-image: url(@images/login-bg.jpg)
+    background-size: 50% 100%
+    background-position: right center
+    background-repeat: no-repeat
+    background-color: #f5f5f5
+    padding: 100px 0
+    display: flex
+    align-items: center
+    @media (max-width: 992px)
+        align-items: flex-start
+        padding: 30px 0
+        background-image: none
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media (max-width: 992px)
+            align-items: flex-start
+    &__item
+        width: 33.333333%
+        @media (max-width: 992px)
+            width: 100%
+    &__item--right
+        text-align: center
+        @media (max-width: 992px)
+            display: none
+    &__title
+        font-weight: 600
+        font-size: 36px
+        line-height: 46px
+        margin: 0 0 40px
+        color: #2b2b2b
+    &__header
+        font-size: 34px
+        color: #fff
+        font-weight: bold
+    &__logo
+        margin: 55px 0 40px
+    &__descr
+        font-size: 16px
+        font-weight: 400
+        line-height: 24px
+        margin: 30px 0 0
+        color: #fff
+    &__label
+        color: #2b2b2b
+        font-size: 14px
+        padding: 12px 0
+    &__input
+        background: #fff
+        display: block
+        padding: 15px
+        color: #2b2b2b
+        width: 100%
+        border: none
+        border-radius: 5px
+        margin-bottom: 10px
+        font-size: 16px
+        font-weight: 600
+        outline: none
+    &__error
+        color: red
+        font-size: 14px
+        margin-bottom: 10px
+        margin-top: -5px
+    &__remember
+        margin-top: 25px
+        display: flex
+        justify-content: space-between
+    &__remember-container
+        display: flex
+        align-items: center
+    &__remember-text
+        font-size: 12px
+        margin-left: 5px
+    &__reset
+        color: #48c2c5
+        font-size: 14px
+        text-decoration: none
+        &:hover
+            text-decoration: underline
+    &__actions
+        margin-top: 30px
+        & > *:not(:last-child)
+            margin-bottom: 20px
+    &__checkbox-container
+        margin-top: 12px
+        margin-bottom: 15px
+        display: flex
+        align-items: flex-start
+        gap: 8px
+    &__checkbox-text
+        color: #2b2b2b
+        line-height: 20px
+        font-size: 12px
+        a
+            color: #48c2c5
+    &__select
+        height: 50px
+        padding: 0 15px
+        width: 100%
+        font-size: 16px
+        font-weight: 600
+        -webkit-appearance: none
+        -moz-appearance: none
+        text-indent: 1px
+        outline: none
+        text-overflow: ''
+    &__select-container
+        margin-top: 24px
+        background: white
+        position: relative
+        &::before
+            content: ''
+            width: 6px
+            height: 11px
+            z-index: 2
+            position: absolute
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAALCAYAAABcUvyWAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjY5M0VEODY0RDVBNTExRTlBNkY5REVDRkU1OEFBNzhDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjY5M0VEODY1RDVBNTExRTlBNkY5REVDRkU1OEFBNzhDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NjkzRUQ4NjJENUE1MTFFOUE2RjlERUNGRTU4QUE3OEMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NjkzRUQ4NjNENUE1MTFFOUE2RjlERUNGRTU4QUE3OEMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz76MkagAAAAhElEQVR42mJWV1d/JCIicvft27c3GZAAM0gQSC8D0leQJZlBHKDgJSB7MZB+CORfAUuACCDnFlDwFFTnIyD/MiOyuUD7nIDURiDOYEaWAKq8D9QhAGTWoOvwA9kFxIHIgs5A/AWIfZEFrYH4MxCHIQuaAPEHIE5kQDN3PxBnM6ABgAADAHwqM1Lso90KAAAAAElFTkSuQmCC')
+            right: 20px
+            transform: rotate(90deg)
+            top: 50%
+            margin-top: -5px
