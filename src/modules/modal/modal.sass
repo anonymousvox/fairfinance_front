@@ -1,0 +1,39 @@
+.modal
+    &__wrapper
+        .react-responsive-modal-modal
+            min-width: 750px
+            padding: 35px 40px
+            box-sizing: border-box
+            border-radius: 10px
+            @media (max-width: 600px)
+                min-width: auto
+        .react-responsive-modal-overlay
+            background: rgba(0, 0, 0, 0.8)
+        .react-responsive-modal-closeButton
+            width: 40px
+            height: 40px
+            right: 0
+            top: 0
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIiIGhlaWdodD0iMjIiIHZpZXdCb3g9IjAgMCAyMiAyMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMSAwQzQuOSAwIDAgNC45IDAgMTFDMCAxNy4xIDQuOSAyMiAxMSAyMkMxNy4xIDIyIDIyIDE3LjEgMjIgMTFDMjIgNC45IDE3LjEgMCAxMSAwWk0xNC45IDEzLjRDMTUuMyAxMy44IDE1LjMgMTQuNSAxNC45IDE0LjlDMTQuNyAxNS4xIDE0LjQgMTUuMiAxNC4yIDE1LjJDMTQgMTUuMiAxMy43IDE1LjEgMTMuNSAxNC45TDExLjEgMTIuNUw4LjcwMDAxIDE0LjlDOC41MDAwMSAxNS4xIDguMiAxNS4yIDggMTUuMkM3LjcgMTUuMiA3LjQ5OTk5IDE1LjEgNy4yOTk5OSAxNC45QzYuODk5OTkgMTQuNSA2Ljg5OTk5IDEzLjggNy4yOTk5OSAxMy40TDkuNzAwMDEgMTFMNy4yOTk5OSA4LjU5OTk4QzYuODk5OTkgOC4xOTk5OCA2Ljg5OTk5IDcuNDk5OTggNy4yOTk5OSA3LjA5OTk4QzcuNjk5OTkgNi42OTk5OCA4LjM5OTk5IDYuNjk5OTggOC43OTk5OSA3LjA5OTk4TDExLjIgOS41TDEzLjYgNy4wOTk5OEMxNCA2LjY5OTk4IDE0LjcgNi42OTk5OCAxNS4xIDcuMDk5OThDMTUuNSA3LjQ5OTk4IDE1LjUgOC4xOTk5OCAxNS4xIDguNTk5OThMMTIuNyAxMUwxNC45IDEzLjRaIiBmaWxsPSIjMzMzMzMzIi8+Cjwvc3ZnPgo=")
+            background-repeat: no-repeat
+            background-position: center center
+            transition: 0.3s all ease
+            outline: none
+            &:hover
+                opacity: 0.8
+            & > *
+                display: none
+        .input-container__label
+            max-width: 100%
+        &-small
+            .react-responsive-modal-modal
+                max-width: 500px
+                min-width: auto
+        &-without-btn
+            .react-responsive-modal-closeButton
+                display: none
+
+.react-responsive-modal-overlay,
+.react-responsive-modal-container,
+.react-responsive-modal-modal
+    animation-fill-mode: forwards!important

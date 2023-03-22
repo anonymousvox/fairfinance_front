@@ -2,6 +2,7 @@ import React from 'react';
 import { Form, Field } from 'react-final-form'
 import InputMask from "react-input-mask";
 import { Link } from 'react-router-dom';
+
 import Header from '../../components/header';
 import AuthLayout from '../../layouts/auth-layout';
 
@@ -10,7 +11,7 @@ import { emailValidateRules, phoneConfirmationValidateRules, registerNameRules, 
 const Registration = () => {
 
     const onSubmit = (values) => {
-        console.log("Test", values)
+        console.log(values)
     }
 
     // import.meta.env.VITE_APP_API_URL
@@ -73,7 +74,9 @@ const Registration = () => {
                                     component="select"
                                     className="auth-layout__select"
                                 >
-                                    <option value="investor">Я Скаут</option>
+                                    <option value="investor">Я инвестор</option>
+                                    <option value="borrower">Я заёмщик</option>
+                                    <option value="institutional_investor">Я финансовая организация</option>
                                 </Field>
                             </div>
                             <Field
